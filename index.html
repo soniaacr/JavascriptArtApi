@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="main.css">
+<script src="main.js" defer></script>
+<title>API Gallery</title>
+</head>
+<body>
+    <div class="container">    
+        <h1 class="text-center">Renaissance Revival - Gallery of Aged Aesthetics</h1>
+    </div>
+
+    <!-- Main section -->
+    <section class=" paris bg-dark text-light p-10 p-lg-0 lg-10 text-sm-start">
+        <div class="container p-5">
+            <div class="row-sm col-sm">
+                <div class="d-sm-flex align-items-center justify-content-evenly">
+                    <figure class="gallery_item" onclick="event.stopPropagation(), getInfo(this.id)">                  
+                        <img src="images/ancient1.jpg" alt="20684" class="img-fluid shadow-lg col-lg-18 col-md-6"  id="fig1" onclick="getInfo(this.id)">
+                    </figure>
+                    <div class="popup" onclick="myFunction()">
+                        <h1 class="p-5 col-lg-2 col-md-6 text-warning">Solon Before Croseous</h1>
+                        <span class="popuptext" id="myPopup">Nikolaus Knüpfer (Dutch, about 1603 - 1655)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-secondary p-10 pt-lg-0 p-lg-10 text-warning text-sm-start shadow">
+        <div class="container mt-10 p-5">
+                <div class="d-sm-flex align-items-center justify-content-evenly">
+                   <div class="popup" onclick="myFunction1()">
+                        <h1 class="p-5 col-lg-2 col-md-6 bg-gray text-light">Joseph & Potiphar's Wife</h1>
+                        <span class="popuptext" id="myPopup1">Guido Reni (Italian, 1575 - 1642)</span>
+                    </div>
+                    <figure class="gallery_item" onclick="event.stopPropagation(),getInfo(this.id)">
+                        <img src="images/ancient2.jpg" alt="25865" class="img-fluid shadow-lg col-lg-18 col-md-6" id="fig2" onclick="getInfo(this.id)">
+                    </figure>
+                </div>
+        </div>
+    </section>
+
+    <section class="bg-dark text-light p-10 p-lg-0 lg-10 text-center text-sm-start">
+        <div class="container p-5">
+            <div class="row-sm col-sm">
+                <div class="d-sm-flex align-items-center justify-content-evenly">
+                    <figure class="gallery_item" onclick="event.stopPropagation(); getInfo(this.id,event)">
+                        <img src="images/ancient3.jpg" alt="14598" class="img-fluid shadow-lg col-lg-18 col-md-6" id="fig3" onclick="getInfo(this.id)">
+                    </figure>
+                    <div class="popup" onclick="myFunction2()">
+                        <h1 class="p-5 col-lg-2 col-md-6 text-warning">The Shade of Samuel Invoked By Saul</h1>
+                        <span class="popuptext" id="myPopup2">Bernardo Cavallino (Italian (Neapolitan), 1616 - 1656)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-secondary p-10 pt-lg-0 p-lg-10 text-center text-warning text-sm-start shadow">
+        <div class="container mt-10 p-5">
+                <div class="d-sm-flex align-items-center justify-content-evenly">
+                    <div class="popup" onclick="myFunction3()">
+                        <h1 class="p-5 col-lg-2 col-md-6 text-light">Interior with Soldiers and Women</h1>
+                        <span class="popuptext" id="myPopup3">Jacob Duck (Dutch, about 1600 - 1667)</span>
+                    </div>
+                    <figure class="gallery_item" onclick="event.stopPropagation(); getInfo(this.id,event)">
+                        <img src="images/ancient4.jpg" alt="44018" class="img-fluid shadow-lg col-lg-18 col-md-6" id="fig4" onclick="getInfo(this.id)">
+                    </figure>
+                </div>
+        </div>
+    </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
